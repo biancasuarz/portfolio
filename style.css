@@ -1,0 +1,158 @@
+header {
+    background-color: #3a4a3f; /* Verde militar */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Branco para contraste */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Menu de Navegação */
+  nav .menu {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav .menu li {
+    display: inline-block;
+  }
+  
+  nav .menu li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3a4a3f; /* Verde militar */
+    border: 1px solid #2e382e; /* Verde militar mais escuro */
+    transition: all 0.3s ease;
+  }
+  
+  nav .menu li a:hover {
+    background-color: #2e382e; /* Verde mais escuro no hover */
+    color: #d4d4d4; /* Cinza claro */
+    border-color: #d4d4d4;
+  }
+  
+  /* Corpo da Página */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b; /* Preto */
+    color: #e0e0e0; /* Texto em cinza claro */
+  }
+  
+  /* Links */
+  a {
+    color: #9caf88; /* Verde claro */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #c7d9af; /* Verde mais claro no hover */
+  }
+  
+  /* Seção Sobre */
+  .sobre {
+    margin: 20px 0;
+    background-color: #e0e0e0;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .perfil img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Seção Vídeo */
+  .video {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 20px;
+    background-color: #4a148c;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 5px;
+  }
+  
+  footer img {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* Seção Contato */
+.contato {
+    margin: 20px 0;
+    background-color: #e0e0e0;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contato h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #4a148c;
+  }
+  
+  form button {
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #6a1b9a;
+  }
+  
