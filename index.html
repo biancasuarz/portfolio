@@ -1,112 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Kevin Schuab">
+		<meta name="keywords" content="HTML, CSS, JavaScript">	
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<title>Meu Perfil</title>
+	</head>
+	<body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projeto Portfólio">
-  <meta name="author" content="Generation Brasil">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <title>Meu Perfil</title>
-</head>
+		<header>
+			<div id="header_content" class="flex">
+				<div id="titulo">
+					<h1 class="nome-logo">Bianca Soares</h1>
 
-<body>
+				</div>
+				<div id="menu">
+					<nav>
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-  <header>
+		<main>
+			<section id="about" class="flex_start">
+				<h2>Sobre mim</h2>
 
-    <div id="header_content">
+				<div id="conteudo" class="flex">
 
-      <div id="titulo">
+					<img
+						src="./assets/image/foto-perfil.jpg"
+						alt="Foto do criador desse conteudo"
+						class="img_profile"
+					/>
 
-        <h1>Generation Brasil</h1>
-      </div>
+					<article id="sobre_texto">
 
+						<p>
+							Sou uma desenvolvedora Full Stack, sempre em busca de novos desafios e aprimoramento das minhas habilidades de programação. Estou constantemente explorando novas tecnologias e práticas para melhorar minha eficiência no desenvolvimento de software.
+						</p>
 
-      <div id="menu">
+						<p>
+							Bacharelado em Ciência da Computação - Universidade Anhembi Morumbi
+              Final: 12/2026
+            </p>
 
-        <nav>
+            <p>
+              💻 Áreas de interesse:
+              -Desenvolvimento em Java
+              -Algoritmos e estruturas de dados
+              -Machine Learning e Inteligência Artificial
+            </p>
 
-          <ul id="menu">
-            <li>
-              <a href="index.html"> Home </a>
-            </li>
-            <li>
-              <a href="contato.html"> Contato </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+            <p>
+              📫 Entre em contato
+              Sinta-se à vontade para me contatar para colaborações ou trocar ideias sobre projetos!
+            </p>
+                      
+					</article>
+				</div>
+			</section>
 
+			<section id="video" class="flex_start">
 
-  <main>
+				<h2>Meu vídeo favorito:</h2>
 
+				<div id="youtube" class="flex">
 
-    <section id="about">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/AawLM81gIHo"
+						frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					>
+					</iframe>
 
+				</div>
+			</section>			
+		</main>
 
-      <h2>Sobre a Generation Brasil</h2>
+		<footer class="flex">
+			<section id="redes_sociais">
 
+				<a href="https://www.linkedin.com/in/biancasuarz/">
+					<img src="assets/image/linkedin (1).png" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="https://github.com/biancasuarz">
+					<img src="assets/image/github (1).png" alt="Github" class="social_icon"/>
+				</a>
+				<a href="https://www.instagram.com/biancasuarz/">
+					<img src="assets/image/instragram (1).png" alt="Instagram" class="social_icon"/>
+				</a>
 
-      <div id="conteudo">
+			</section>
 
-        <img src="./assets/img/user_01.svg" alt="Foto do criador desse conteudo" />
+			<h3>Feito com carinho por Bianca Soares - 2025</h3>
+		</footer>
 
-
-        <article id="sobre_texto">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Voluptatem odio possimus, dolorem earum atque
-            itaque quas soluta placeat iure omnis porro cum
-            debitis sequi libero! Deleniti vitae quis hic
-            cumque. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Eius inventore ullam, quia
-            deserunt enim cumque hic officia repudiandae ad ab
-            et sapiente qui vitae accusamus adipisci provident
-            sit assumenda laboriosam!
-          </p>
-        </article>
-      </div>
-    </section>
-
-
-    <section id="video">
-
-
-      <h2>Meu vídeo favorito:</h2>
-
-      <div class="youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-
-    </section>
-
-  </main>
-
-  <footer>
-
-    <section id="redes_sociais">
-
-      <a href="">
-        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a href="">
-        <img src="assets/img/github.svg" alt="Github" />
-      </a>
-      <a href="">
-        <img src="assets/img/instagram.svg" alt="Instagram" />
-      </a>
-
-    </section>
-
-    <h3>
-      Feito com 🧡 por Generation Brasil - 2025
-    </h3>
-
-  </footer>
-</body>
-
+	</body>
 </html>
