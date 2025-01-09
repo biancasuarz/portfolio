@@ -8,18 +8,18 @@
   font-family: sans-serif;
 }
 
-:root {
-  --cor-hover: #83F6EA;
-  --purple-500: #FFB5C0;
-  --purple-800: #FFB5C0;
+  :root {
+    --cor-hover: #83F6EA;
+    --purple-500: #FFB5C0;
+    --purple-800: #FFB5C0;
 
-  --black-800: #03191e;
+    --black-800: #03191e;
 
-  --gray-200: #C4F0C5;
-  --gray-400: #C4F0C5;
+    --gray-200: #C4F0C5;
+    --gray-400: #C4F0C5;
 
-  --white: #03191e;
-}
+    --white: black;
+  }
 
 html {
   width: 100%;
@@ -123,7 +123,7 @@ p{
   width: 350px;
   height: 350px;
   border-radius: 60%;
-  border: 8px solid #FFB5C0;
+  border: px solid #FFB5C0;
   animation: spinCoin 2s ease-in-out;
   transition: transform 2s ease-in-out;
   transform-origin: center;
