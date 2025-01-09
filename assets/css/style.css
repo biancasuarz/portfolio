@@ -123,7 +123,7 @@ p{
   width: 350px;
   height: 350px;
   border-radius: 60%;
-  border: px solid #FFB5C0;
+  border: 10px solid rgb(236, 160, 173);
   animation: spinCoin 2s ease-in-out;
   transition: transform 2s ease-in-out;
   transform-origin: center;
