@@ -8,18 +8,13 @@
   font-family: sans-serif;
 }
 
-  :root {
-    --cor-hover: #83F6EA;
-    --purple-500: #FFB5C0;
-    --purple-800: #FFB5C0;
-
-    --black-800: #03191e;
-
-    --gray-200: #C4F0C5;
-    --gray-400: #C4F0C5;
-
-    --white: black;
-  }
+:root {
+  --main-background: #EDCBB1;
+  --white: #FFFFFF;
+  --black-800: #000000;
+  --purple-800: #B7245C;
+  --purple-500: #B7245C;
+}
 
 html {
   width: 100%;
@@ -27,28 +22,31 @@ html {
 }
 
 body {
-  background: var(--gray-200);
-  color: var(--black-800);
+  background-color: var(--main-background);
+  color: var(--main-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%
 }
 
-h1{
+h1 {
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
 }
 
-h2{
+h2 {
   padding: 1rem;
   color: var(--black-800);
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
 }
 
-h3{
+h3 {
   padding: 1rem;
   color: var(--white);
   font-size: 1.25rem;
@@ -56,13 +54,19 @@ h3{
   text-align: center;
 }
 
-p{
+p {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
   padding: 0.5rem 0;
+  margin-left: 30px;
 }
 
+.container {
+  background-color: var(--secondary-background);
+  padding: 20px;
+  border-radius: 8px;
+}
 
 .flex {
   display: flex;
@@ -77,16 +81,16 @@ p{
 
 #header_content {
   height: 80px;
-  position: sticky; 
-  top: 0; 
-  width: 100%; 
+  position: sticky;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   padding: 24px;
   background-color: var(--purple-800);
   border-bottom: 1px solid var(--purple-500);
 }
 
-.nome-logo{
+.nome-logo {
   font-family: "Playwrite AU SA", serif;
 }
 
@@ -107,41 +111,53 @@ p{
 }
 
 
-#about{
+#about {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
 }
 
-#conteudo{
+#conteudo {
   flex-direction: row;
   gap: 2rem;
 
 }
 
-.img_profile{
+.img_profile {
   width: 350px;
   height: 350px;
-  border-radius: 60%;
-  border: 10px solid rgb(236, 160, 173);
+  border: 6px solid var(--purple-800);
+  border-radius: 50%;
   animation: spinCoin 2s ease-in-out;
   transition: transform 2s ease-in-out;
   transform-origin: center;
+  max-width: 100%;
+  object-fit: cover;
 }
 
-.img_profile:hover{
+.img_profile:hover {
   transform: rotateY(1080deg);
 }
 
+button:hover,
+a:hover {
+  background-color: var(--hover-color);
+  color: var(--main-background);
+  transition: 0.3s ease-in-out;
+}
 
-#video{
+
+#video {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
 }
 
+.video-container {
+  margin: 10px;
+}
 
-footer{
+footer {
   flex-direction: column;
   margin: 0;
   padding: 2rem;
@@ -155,7 +171,7 @@ footer{
 
 #redes_sociais {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   margin: 1rem 0 0 0;
   width: 220px;
 }
@@ -163,29 +179,15 @@ footer{
 .social_icon {
   width: 4rem;
   height: 4rem;
-  filter: brightness(0) 
-          saturate(100%) 
-          invert(100%) 
-          sepia(0%) 
-          saturate(7457%) 
-          hue-rotate(23deg) 
-          brightness(95%) 
-          contrast(87%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%) hue-rotate(23deg) brightness(95%) contrast(87%);
 }
 
-.social_icon:hover { 
-  filter: brightness(0) 
-          saturate(100%) 
-          invert(5%) 
-          sepia(59%) 
-          saturate(437%) 
-          hue-rotate(213deg) 
-          brightness(86%) 
-          contrast(88%);
+.social_icon:hover {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(59%) saturate(437%) hue-rotate(213deg) brightness(86%) contrast(88%);
 }
 
 
-#contact{
+#contact {
   flex-direction: row;
   gap: 2rem;
 }
@@ -220,7 +222,7 @@ textarea {
   height: 5rem;
 }
 
-form span{
+form span {
   margin: 0 0 0.5rem 0.75rem;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -242,13 +244,13 @@ form button:hover {
   background: var(--purple-500);
 }
 
-#mapa{
+#mapa {
   width: 480px;
   flex-direction: column;
   gap: 3rem;
 }
 
-#endereco > p{
+#endereco>p {
   font-size: 1rem;
   text-align: justify;
   font-weight: 600;

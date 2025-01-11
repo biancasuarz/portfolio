@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Kevin Schuab">
-		<meta name="keywords" content="HTML, CSS, JavaScript">	
-		
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./assets/css/style.css">
-		<title>Meu Perfil</title>
-	</head>
-	<body>
 
-		<header>
-			<div id="header_content" class="flex">
-				<div id="titulo">
-					<h1 class="nome-logo">Bianca Soares</h1>
+<head>
+	<meta charset="UTF-8">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto Portfólio">
+	<meta name="author" content="Kevin Schuab">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+
+	<link rel="icon" href="./assets/image/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Meu Perfil</title>
+</head>
+
+<body>
+
+	<header>
+		<div id="header_content" class="flex">
+			<div id="titulo">
+				<h1 class="nome-logo">Bianca Soares</h1>
+
+			</div>
+			<div id="menu">
+				<nav>
+					<ul id="menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="contato.html">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="about" class="flex_start">
+			<h2>Sobre mim</h2>
+
+			<div id="conteudo" class="flex">
+
+				<img src="./assets/image/foto-perfil.jpg" alt="Foto do criador desse conteudo" class="img_profile" />
+
+				<article id="sobre_texto">
+
+					<p>
+						Sou uma desenvolvedora Full Stack, sempre em busca de novos desafios e aprimoramento das minhas
+						habilidades de programação.<br>
+						Estou constantemente explorando novas tecnologias e práticas para melhorar minha eficiência no
+						desenvolvimento de software.
+					</p>
+
+					<p>
+						<strong>Bacharelado em Ciência da Computação - Universidade Anhembi Morumbi</strong><br>
+						Final: 12/2026
+					</p>
+
+					<p>
+						💻<strong>Áreas de interesse:</strong><br>
+						-Desenvolvimento em Java<br>
+						-Algoritmos e estruturas de dados<br>
+						-Machine Learning e Inteligência Artificial
+					</p>
+
+					<p>
+						📫<strong>Entre em contato</strong><br>
+						Sinta-se à vontade para me contatar para colaborações ou trocar ideias sobre projetos!
+					</p>
+
+				</article>
+			</div>
+		</section>
+
+		<section id="video" class="flex_start">
+			<h2>Meus vídeos favoritos:</h2><br>
+
+			<div id="youtube" class="flex">
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/AawLM81gIHo" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
 				</div>
-				<div id="menu">
-					<nav>
-						<ul id="menu">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="contato.html">Contato</a>
-							</li>
-						</ul>
-					</nav>
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/kottjfEd7Zw" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
 				</div>
 			</div>
-		</header>
+		</section>
 
-		<main>
-			<section id="about" class="flex_start">
-				<h2>Sobre mim</h2>
+	</main>
 
-				<div id="conteudo" class="flex">
+	<footer class="flex">
+		<section id="redes_sociais">
 
-					<img
-						src="./assets/image/foto-perfil.jpg"
-						alt="Foto do criador desse conteudo"
-						class="img_profile"
-					/>
+			<a href="https://www.linkedin.com/in/biancasuarz/" target="_blank" rel="noopener noreferrer">
+				<img src="assets/image/linkedin (1).png" alt="LinkedIn" class="social_icon" />
+			</a>
 
-					<article id="sobre_texto">
+			<a href="https://github.com/biancasuarz" target="_blank" rel="noopener noreferrer">
+				<img src="assets/image/github (1).png" alt="Github" class="social_icon" />
+			</a>
 
-						<p>
-							Sou uma desenvolvedora Full Stack, sempre em busca de novos desafios e aprimoramento das minhas habilidades de programação.<br>
-              Estou constantemente explorando novas tecnologias e práticas para melhorar minha eficiência no desenvolvimento de software.
-						</p>
+		</section>
 
-						<p>
-							<strong>Bacharelado em Ciência da Computação - Universidade Anhembi Morumbi</strong><br>
-              Final: 12/2026
-            </p>
+		<h3>Feito com carinho por Bianca Soares - 2025</h3>
+	</footer>
 
-            <p>
-              💻<strong>Áreas de interesse:</strong><br>
-              -Desenvolvimento em Java<br>
-              -Algoritmos e estruturas de dados<br>
-              -Machine Learning e Inteligência Artificial
-            </p>
+	<script src="assets/js/script.js"></script>
 
-            <p>
-              📫<strong>Entre em contato</strong><br>
-              Sinta-se à vontade para me contatar para colaborações ou trocar ideias sobre projetos!
-            </p>
-                      
-					</article>
-				</div>
-			</section>
+</body>
 
-			<section id="video" class="flex_start">
-
-				<h2>Meu vídeo favorito:</h2>
-
-				<div id="youtube" class="flex">
-
-					<iframe
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/AawLM81gIHo"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					>
-					</iframe>
-
-				</div>
-			</section>			
-		</main>
-
-		<footer class="flex">
-			<section id="redes_sociais">
-
-				<a href="https://www.linkedin.com/in/biancasuarz/">
-					<img src="assets/image/linkedin (1).png" alt="LinkedIn" class="social_icon"/>
-				</a>
-				<a href="https://github.com/biancasuarz">
-					<img src="assets/image/github (1).png" alt="Github" class="social_icon"/>
-				</a>
-
-			</section>
-
-			<h3>Feito com carinho por Bianca Soares - 2025</h3>
-		</footer>
-
-		<script src="assets/js/script.js"></script>
-
-	</body>
 </html>
